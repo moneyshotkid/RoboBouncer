@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say>Sorry but the caller is unavaliable at this time. Goodbye</Say>
+  <Hangup/>
+</Response>
