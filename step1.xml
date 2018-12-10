@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say>https://worthless-father-7254.twil.io/assets/male_statename.mp3</Say>
+     <Record action='step2.xml' recordingStatusCallback="makecall.php?cid={{CallSid}}" recordingStatusCallbackMethod="POST"
+        maxLength="10"
+        playBeep="true" />
+</Response>
