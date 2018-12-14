@@ -20,7 +20,7 @@ $call1 = $twilio1->calls($cid)->fetch();
 //Replace with phone numbers
 $call2 = $twilio2->calls->create("{{Target Phone Number +17145551234}}", // to
                         "{{Twilio Phone Number +17145551212}}", // from
-                        array("url" => "playrecording.php?RecordingUrl=".$RecordingUrl."&cid=".$cid)
+                        array("url" => "playrecording.php?RecordingUrl=".$RecordingUrl."&cid=".$cid, , "StatusCallbackEvent"=>"completed","StatusCallback"=>"screener4_2.php?cb=1&cid=".$cid)
                );
 
 ?>
