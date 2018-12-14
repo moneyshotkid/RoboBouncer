@@ -29,6 +29,10 @@ $c=$client->calls($cid)->update(array("method" => "POST","url"=>"rejectcall.xml"
 header("Content-type: text/xml");
 echo '<?xml version="1.0" encoding="UTF-8"?><Response><Say>Okay Good bye</Say><Hangup/></Response>';
 exit;
+}else if($_GET['cb']==1){
+$c=$client->calls($cid)->update(array("method" => "POST","url"=>"https://handler.twilio.com/twiml/EH1601ebfc1ddc746d3954bc1a94d5a1b4"));
+header("Content-type: text/xml");
+echo '<?xml version="1.0" encoding="UTF-8"?><Response><Say>Okay Good bye</Say><Hangup/></Response>';
 }
 
 
